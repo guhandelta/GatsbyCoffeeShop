@@ -1,19 +1,29 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import NavBar from '../components/Globals/navbar'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaGulp } from 'react-icons/fa';
+import BackgroundTemplate from '../components/Globals/BackgroundTemplate';
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <NavBar />
-    <h1>Hi people</h1>
-    <p>Welcome to the Coffee Shop<FaGulp /></p>
-    <p>Now go build something great. </p>
+    <BackgroundTemplate img={data.img.childImageSharp.fluid} />
   </Layout>
 )
 
+
+export const query = graphql`
+{
+  img:file(relativePath:{eq:"default-background.jpeg"}){
+    childImageSharp{
+      fluid{
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+}
+`
 export default IndexPage
