@@ -7,12 +7,22 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
 import "./bootstrap.min.css"
 
-const Layout = ({ children }) => <>{children}</>;
+import Navbar from './Globals/Navbar'
+import Footer from './Globals/Footer'
+import NavBar from "./Globals/Navbar"
+
+const Layout = ({ children }) => (
+  <>
+    <NavBar />
+    {children}
+    <Footer />
+  </>
+  );
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

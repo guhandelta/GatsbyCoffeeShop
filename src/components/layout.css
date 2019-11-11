@@ -1,5 +1,5 @@
 :root{
-  --mainBrown: #2d1ef1;
+  --mainBrown: #421402;
   --mainYellow: rgb(255, 158, 9); /*Hex values can't be provided to linear-gradient(), it may only be provided as rgb values*/
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(253, 164, 31, 0.5), rgba(255, 164, 31, 0.5));
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
   background-position: center;
   background-size: cover;
 }
@@ -47,4 +47,7 @@ h1,h2,h3,h4,h5,h6{
 .btn-yellow:hover{
   background: var(--mainYellow);
   color: var(--mainWhite) !important;
+}
+.footer{
+  background: var(--mainBrown);
 }
