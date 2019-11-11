@@ -16,4 +16,4 @@ export default function BackgroundTemplate({img, styleClass, title, children }) 
 BackgroundTemplate.defaultProps= {
     title: "Guhan's Coffee",
     styleClass: "default-background"
-};
+}; 
