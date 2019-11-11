@@ -27,6 +27,10 @@ h1,h2,h3,h4,h5,h6{
   font-size: 2rem;
 }
 
+.title{
+  color: var(--mainYellow);
+}
+
 .default-background{
   min-height: 100vh;
   display: flex;
@@ -35,4 +39,12 @@ h1,h2,h3,h4,h5,h6{
   background: linear-gradient(rgba(253, 164, 31, 0.5), rgba(255, 164, 31, 0.5));
   background-position: center;
   background-size: cover;
+}
+.btn-yellow{
+  color: var(--mainYellow) !important;
+  border-color: var(--mainYellow) !important;
+}
+.btn-yellow:hover{
+  background: var(--mainYellow);
+  color: var(--mainWhite) !important;
 }
