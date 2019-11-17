@@ -72,7 +72,7 @@ export default class Menu extends Component {
                                                         <h6 className="mb-0">
                                                             <small>
                                                                 <strong>
-                                                                    {node.title}
+                                                                    {node.ttle}
                                                                 </strong>
                                                             </small>
                                                         </h6>
