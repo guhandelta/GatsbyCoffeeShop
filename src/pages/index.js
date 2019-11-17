@@ -1,13 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 // PageQuery is used here as the data on this page requires validaion for categorizing the data, which is fetched and then accessed-
-//- from teh
+//- from the componnet
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundTemplate from '../components/Globals/BackgroundTemplate';
 import Info from '../components/Home/Info';
 import Menu from '../components/Home/Menu';
 import Products from '../components/Home/Products';
+import Contact from '../components/Home/Contact';
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = ({data}) => (
     <Info />
     <Menu items={data.menu} />
     <Products />
+    <Contact />
   </Layout>
 )
 
