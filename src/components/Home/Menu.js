@@ -37,12 +37,12 @@ export default class Menu extends Component {
         
         if(this.state.items.length>0){
             return(
-                <section className="menu py-5">
+                <section className="menu py-5" id="menu">
                     <div className="container">
                         <Title title="Best of out products" />
                         <div className="row mb-5">
                             <div className="col">
-                                <h1>Beverages Currently Available</h1>
+                                <h1 className="text-center">Beverages Currently Available</h1>
                                 {/* Categories */}
                                 <div className="row mb-5">
                                     <div className="col-10 mx-auto text-center">
