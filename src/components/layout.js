@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
     {children}
     <Footer />
   </>
-  );
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
